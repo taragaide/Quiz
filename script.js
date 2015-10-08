@@ -2,27 +2,33 @@ $(document).ready(function() {
    var correctAnswers = 0;
    //quiz array
    var quiz = [ {
-    question: "What year was the Monopoly board game invented?",
+question: "What year was the Monopoly board game invented?",
       choices: ["1932", "1946", "1931", "1935"],
       correct: 4
    },
 
     {
-      question: "What is the name of the space that you start the game from?.",
+      question: "What is the name of the space that you start the game from?",
       choices: ["Free Parking", "Chance", "Just Visiting", "Go!"],
       correct: 4
    },
    {
       question: "The banker MAY be a player",
-      choices: ["True", "False"],
+      choices: ["True", "Who Cares", "Unsure", "False" ],
       correct: 1
    },
    {
-      question: "How much will you pay to the bank when lifting a mortgage on your mortgaged properties?",
-      choices: ["All of your money", "$200", "Mortgage value plus 10% interest", "Mortgage value only"],
+      question: "You can go to jail by three methods. Which one is NOT a way to go to jail?",
+      choices: ["Landing on the jail square by roll of dice", "Moved by chance or community chest card", "Opponent physically placing your piece in jail", "Rolling doubles three times in one turn"],
       correct: 3
-   }
-   ];
+   }];
+
+
+
+
+
+   var correctAnswers = 0;
+   
 
    // functions
    $(".app .start").on("click",function(){
@@ -94,11 +100,11 @@ $(".app .next.question-2").on("click",function(){
       if (finalScore === 100) {
          $(".app .question").text("Congratulations! You got " + finalScore + " %");
       } else if (finalScore === 75) {
-         $(".app .question").text("Good job! You got " + finalScore + " %");
+        $(".app .question").text("Good job! You got " + finalScore + " %");
       } else if (finalScore === 50) {
          $(".app .question").text("Alright! You got " + finalScore + " %");
       } else {
-         $(".app .question").text("Oh no! You got " + finalScore + " %");
+        $(".app .question").text("Oh no! You got " + finalScore + " %");
       }
 
       $(".app .answer-a").hide();
