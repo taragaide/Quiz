@@ -1,8 +1,36 @@
+
+
+
 body {
 	background-color: #bbbbbb;
 	text-align: center;
-}
-h1 {
+	}
+
+
+.col-sm-6 {
+	padding: 10px;
+	}
+	
+.pageMovement {
+	margin-top: 25px;
+	}
+
+	.answer {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 80%;
+	background: #C6f3ff;
+	}
+
+	.container {
+		border: solid 1px #D8D8D8
+	}
+
+
+
+
+/*h1 {
 	font-family: Perpetua, Baskerville, 'Big Caslon', 'Palatino Linotype', Palatino, 'URW Palladio L', 'Nimbus Roman No9 L', serif;
 	font-size: 47px;
 	font-style: normal;

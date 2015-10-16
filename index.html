@@ -3,49 +3,67 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
+	<style>
+		.col-sm-6{
+				
+				padding: 10px;
+				}
 	
-	<title>Monopoly Trivia!</title>
-	<br>
-	<br>
-	<br>
+			.pageMovement{
+					margin-top: 25px;
+				}
+
+			.answer {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				width: 80%;
+				background: #C6f3ff;
+			}
+
+	.container {
+		border: solid 1px #D8D8D8
+	}
+
+	</style>
 </head>
-	
+
+<br>
+
 <body>
-	
-	<a href="http://github.com/taragaide"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
-	<div class="page">
-		<div class="header">
-			<h1>Monopoly Trivia</h1>
-		</div>
-		<div class="body">
-			<div class="image">
-				<a href="http://s952.photobucket.com/user/taragaide/media/df3dc2a5-bd75-4995-ab3d-70ba826b6e64_zpsde034dfs.jpg.html" target="_blank"><img src="http://i952.photobucket.com/albums/ae6/taragaide/df3dc2a5-bd75-4995-ab3d-70ba826b6e64_zpsde034dfs.jpg" class="img-circle"
-				border="0" alt=" photo df3dc2a5-bd75-4995-ab3d-70ba826b6e64_zpsde034dfs.jpg"/></a>
+	<div class="container">
+	<h1>Monopoly Trivia!</h1>
+		<div id="quizContent" class="row quiz">
+			<div class="col-sm-12">
+			<h2 id="quizHeader"></h2>
 			</div>
 
-
-			<div class="app">
-				<h3 class="title">The Monopoly real-estate board game for is for two to eight players. The player's goal is to buy, sell, and trade to remain financially sound while facing rivals. </h3> 
-				<button class="start">Start</button> 
-				<div class="question"></div>
-				<div class="answers">
-					<div class="form">
-					<div class="button-a"></div><span class="answer-a"></span>
-						<div class= "button-b"></div><span class="answer-b"></span>
-						<br>
-						<div class= "button-c"></div><span class="answer-c"></span>
-						<div class= "button-d"></div><span class="answer-d"></span>
-					</div>
-				</div>
-				<button class="next question-1">Next</button>
-				<button class="next question-2">Next</button>
-				<button class="next question-3">Next</button>
-				<button class="next finish">Finished</button>
-				<button name="reset" id="reset" class="reset">Reset</button>
-			</div>
-		</div>
+	<div id="questions" class="row">
+		<div class="col-sm-6"> <a data-id="1" class="btn btn-default answer"></a></div>
+		<div class="col-sm-6"> <a data-id="2" class="btn btn-default answer"></a></div>
+		<div class="col-sm-6"> <a data-id="3" class="btn btn-default answer"></a></div>
+		<div class="col-sm-6"> <a data-id="4" class="btn btn-default answer"></a></div>
 	</div>
+	</div>
+
+
+	<div class="row pageMovement">
+		<div id="btnPrevious" class="col-xs-5 col-sm-4 btn btn-primary pull-left">Previous</div>
+		<div id="btnNext" class="col-xs-5 col-xs-offset-4 col-xs-offset-2 btn btn-primary pull-right">Next</div>
+
+		<div class="row">
+			<div id="finishQuiz" class="btn-success btn-block hide">Submit Quiz</div>
+		
+		<div class="row progress">
+			<div id="progressBar" class="progress-bar progress-bar-success progress-bar-stripled"="progressbar" aria-valuenow="0" aria-valuemax="100" style="width:50%">0% Complete</div>
+</div>
+
+		</div>
+		</div>
+
+	<a href="http://github.com/taragaide"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
 </body>
 </html>
