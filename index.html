@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-	<style>
-		.col-sm-6{
-				
-				padding: 10px;
-				}
-	
-			.pageMovement{
-					margin-top: 25px;
-				}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+    crossorigin="anonymous">
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  
 
-			.answer {
-				margin-left: auto;
-				margin-right: auto;
-				display: block;
-				width: 80%;
-				background: #C6f3ff;
-			}
 
-	.container {
-		border: solid 1px #D8D8D8
-	}
-
-	</style>
 </head>
 
 <br>
 
 <body>
-	<div class="container">
-	<h1>Monopoly Trivia!</h1>
-		<div id="quizContent" class="row quiz">
+    <div class="container">
+        <h1>Monopoly Trivia!</h1>
+        <div id="page1" class="row quiz">
+            <div class="col-sm-12">
+            </div>
+
+            <h2 id="quizHeader"></h2>
+            <!--<div id="questions" class="row">
+		<div class="column"> <a data-id="1" class="btn btn-default answer"></a>1933</div>
+		<div class="column"> <a data-id="2" class="btn btn-default answer"></a>1946</div>
+		<div class="column"> <a data-id="3" class="btn btn-default answer"></a>1931</div>
+		<div class="column"> <a data-id="4" class="btn btn-default answer"></a>1935</div>
+	</div>
+	</div>
+
+
+
+<div id="page2" class="row quiz hide">
+	<div class="col-sm-12">
+		<h2>What is the name of the space that you start the game from?</h2>
+	</div>
+			<div class="row">
+				<div id="questions" class="row">
+		<div class="column"> <a data-id="1" class="btn btn-default answer"></a>1933</div>
+		<div class="column"> <a data-id="2" class="btn btn-default answer"></a>1946</div>
+		<div class="column"> <a data-id="3" class="btn btn-default answer"></a>1931</div>
+		<div class="column"> <a data-id="4" class="btn btn-default answer"></a>1935</div>
+	</div>
+
+
+			
+
+			<div id="page3" class="row quiz">
 			<div class="col-sm-12">
-			<h2 id="quizHeader"></h2>
+			<h2>The banker MAY be a player?</h2>
 			</div>
 
-	<div id="questions" class="row">
-		<div class="col-sm-6"> <a data-id="1" class="btn btn-default answer"></a></div>
-		<div class="col-sm-6"> <a data-id="2" class="btn btn-default answer"></a></div>
-		<div class="col-sm-6"> <a data-id="3" class="btn btn-default answer"></a></div>
-		<div class="col-sm-6"> <a data-id="4" class="btn btn-default answer"></a></div>
-	</div>
-	</div>
+			<div id="page4" class="row quiz">
+			<div class="col-sm-12">
+			<h2>You can go to jail by three methods. Which one is NOT a way to go to jail?</h2>
+			</div>!-->
 
 
-	<div class="row pageMovement">
-		<div id="btnPrevious" class="col-xs-5 col-sm-4 btn btn-primary pull-left">Previous</div>
-		<div id="btnNext" class="col-xs-5 col-xs-offset-4 col-xs-offset-2 btn btn-primary pull-right">Next</div>
 
-		<div class="row">
-			<div id="finishQuiz" class="btn-success btn-block hide">Submit Quiz</div>
-		
-		<div class="row progress">
-			<div id="progressBar" class="progress-bar progress-bar-success progress-bar-stripled"="progressbar" aria-valuenow="0" aria-valuemax="100" style="width:50%">0% Complete</div>
-</div>
 
-		</div>
-		</div>
 
-	<a href="http://github.com/taragaide"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
+            <div class="row pageMovement">
+                <div id="btnPrevious" class="col-xs-5 col-sm-4 btn btn-primary pull-left">Previous</div>
+                <div id="btnNext" class="col-xs-5 col-xs-offset-4 col-xs-offset-2 btn btn-primary pull-right">Next</div>
+
+                <div class="row">
+                    <div id="finishQuiz" class="btn-success btn-block hide">Submit Quiz</div>
+
+                    <div class="row progress">
+                        <div id="progressBar" class="progress-bar progress-bar-success progress-bar-stripled"="progressbar" aria-valuenow="0"
+                        aria-valuemax="100" style="width:50%">0% Complete</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="http://github.com/taragaide"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"
+                alt="Fork me on GitHub"></a>
 </body>
+
 </html>
