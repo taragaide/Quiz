@@ -1,9 +1,3 @@
-
-
-
-
-
-
 .column {
 	padding: 10px;
 	}
@@ -21,13 +15,18 @@
 	}
 
 	.container {
-		border: solid 1px #D8D8D8
+		border: 1px #D8D8D8
 	}
 
+.hide {
+	display: none;
+}
 
+.show {
+	display: block;
+}
 
-
-/*h1 {
+h1 {
 	font-family: Perpetua, Baskerville, 'Big Caslon', 'Palatino Linotype', Palatino, 'URW Palladio L', 'Nimbus Roman No9 L', serif;
 	font-size: 47px;
 	font-style: normal;
@@ -39,65 +38,12 @@
 
 }
 
-h2 {
-	font-family: Perpetua, Baskerville, 'Big Caslon', 'Palatino Linotype', Palatino, 'URW Palladio L', 'Nimbus Roman No9 L', serif;
-	font-size: 33px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: bold;
-	line-height: 94px;
+
+.progress-bar{
+	padding: 20px;
 }
 
 
-h3 {
-	font-family: Perpetua, Baskerville, 'Big Caslon', 'Palatino Linotype', Palatino, 'URW Palladio L', 'Nimbus Roman No9 L', serif;
-	font-size: 28px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: bold;
-	line-height: 28px;
-	text-align: center;
-	color:#3b3738;
-}
-
-
-
-
-
-
-.start {
-background: #2ECC71;
-    color: #c63d0f;
-    cursor: pointer;
-    letter-spacing: 1px;
-    padding: 10px 0;
-border-radius: 50px;
-border: 3px solid #fff;
-color: #fff;
-width:50%;
-font-weight: 700;
-
-}
-
-
-.reset {
-border: none;
-background: none;
-cursor: pointer;
-padding: 10px 40px;
-display: inline-block;
-margin: 15px 30px;
-text-transform: uppercase;
-letter-spacing: 1px;
-outline: none;
--webkit-transition: all 0.3s;
--moz-transition: all 0.3s;
-transition: all 0.3s;
-border-radius: 40px;
-background: none repeat scroll 0 0 #CB4E4E;
-box-shadow: 0 6px #AB3C3C;
-color: #FFFFFF;
-}
 
 .reset:hover {
 box-shadow: 0 4px #ab3c3c;
