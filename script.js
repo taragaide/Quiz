@@ -1,5 +1,5 @@
 $(function () {
-
+    
     var currentPage = 0,
         correct = 0;
     var myAnswers = [];
@@ -18,6 +18,7 @@ $(function () {
             "Opponent physically placing your piece in jail",
             "Rolling doubles three times in one turn", 3]
     ];
+
 
     var myHeader = document.getElementById("quizHeader");
     var classname = document.getElementsByClassName("answer");
