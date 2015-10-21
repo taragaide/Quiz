@@ -1,22 +1,22 @@
 $(function () {
-    
+
     var currentPage = 0,
         correct = 0;
     var myAnswers = [];
     var myQuiz = [
 
-        ["What year was the Monopoly board game invented?", "1933", "1946", "1931", "1935", 1],
+        ["The earliest known version of Monopoly is known as",1, "The Landlord's Game", "Monopoly", "Property Owners", "Parker Brothers"],
 
-        ["What is the name of the space that you start the game from?", "Free Parking", "Chance",
-            "Just Visiting", "Go!", 4],
+        ["What is the name of the space that you start the game from?",4, "Free Parking", "Chance",
+            "Just Visiting", "Go!"],
 
-        ["The banker MAY be a player?", "True", "Who Cares", "Unsure", "False", 1],
+        ["The banker MAY be a player?",1, "True", "Who Cares", "Unsure", "False"],
 
-        ["You can go to jail by three methods. Which one is NOT a way to go to jail?",
+        ["You can go to jail by three methods. Which one is NOT a way to go to jail?",3,
             "Landing on the jail square by roll of dice",
             "Moved by chance or community chest card",
             "Opponent physically placing your piece in jail",
-            "Rolling doubles three times in one turn", 3]
+            "Rolling doubles three times in one turn"]
     ];
 
 
@@ -31,6 +31,7 @@ $(function () {
 
     btnNext.addEventListener("click", moveNext);
     btnPrevious.addEventListener("click", moveBack);
+     btnFinish.addEventListener("click", endQuiz);
     for (var i = 0; i < classname.length; i++) {
         classname[i].addEventListener('click', myAnswer, false);
     }
@@ -78,6 +79,11 @@ $(function () {
         }
     }
 
+
+function endQuiz(){
+  console.log('Quiz is OVER');
+
+    }
 
 
 
