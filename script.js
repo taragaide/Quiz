@@ -37,9 +37,10 @@ $(function () {
     }
 
     function myAnswer() {
+        //alert();
         var idAnswer = this.getAttribute("data-id");
-        myAnswer[currentPage] = idAnswer;
-        if (myQuiz[currentPage][2] == idAnswer) {
+        myAnswer[currentPage];
+        if (myQuiz[0][1] == idAnswer) {
             console.log("Correct Answer");
         } else {
             console.log("Wrong Answer");
@@ -88,30 +89,34 @@ function endQuiz(){
 
 
     function checkPage(i) {
-        console.log(currentPage);
-        if (currentPage == 1) {
-            myOne.classList.add("show");
-            myOne.classList.remove("hide");
-            myTwo.classList.add("hide");
-            myTwo.classList("show");
+        if (currentPage == 0) {
+            btnPrevious.classList.add("hide");
+        }
+        else {
+            btnPrevious.classList.remove("hide");
         }
 
-        if (currentPage == 2) {
-            myOne.classList.add("hide");
-            myOne.classList.remove("show");
-            myTwo.classList.add("show");
-            myTwo.classList("hide");
+        if ((currentPage +1) < (myQuiz.length)){
+            btnNext.classList.remove("hide");
         }
-        myHeader.innerHTML = myQuiz[currentPage][0];
+
+        else {
+            btnNext.classList.add("hide");
+            btnFinish.classList.remove("hide");
+        }
+
+        myHeader.innerHTML=myQuiz[currentPage][0];
         for (var i = 0; i < myQuestion.children.length; i++) {
             var curNode = myQuestion.children[i];
-            console.log(curNode.childNodes[1].innerHTML);
-            curNode.childNodes[1].innerHTML = myQuiz[currentPage][(i + 1)];
+            curNode.childNodes[1].innerHTML = (myQuiz[currentPage][(i + 2)]);
+        }
+        if (myAnswers[currentPage]==(i+1)) {
+            curNode.classList.add("seleAnswer");
+        }
+        else {
+            curNode.classList.remove("seleAnswer");
         }
     }
-
-
-
 
     //progress bar
     var increment = Math.ceil((currentPage) / (myQuiz.length) * 100);
